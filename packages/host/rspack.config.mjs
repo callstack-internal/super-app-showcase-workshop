@@ -3,6 +3,7 @@ import { fileURLToPath } from 'node:url';
 import * as Repack from '@callstack/repack';
 import rspack from '@rspack/core';
 import { getSharedDependencies } from 'super-app-showcase-sdk';
+import { ReanimatedPlugin } from '@callstack/repack-plugin-reanimated';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -38,6 +39,7 @@ export default env => {
     },
     plugins: [
       new Repack.RepackPlugin(),
+      new ReanimatedPlugin(),
       new Repack.plugins.ModuleFederationPluginV2({
         name: 'host',
         dts: false,
@@ -47,7 +49,7 @@ export default env => {
           dashboard: `dashboard@http://localhost:9002/${platform}/mf-manifest.json`,
           auth: `auth@http://localhost:9003/${platform}/mf-manifest.json`,
           news: `news@http://localhost:9004/${platform}/mf-manifest.json`,
-          adoptaApp: `adoptaApp@http://localhost:9005/${platform}/mf-manifest.json`,
+          adoptaApp: `adoptaApp@http://localhost:9005/${platform}/mf-manifest.json`
         },
         shared: getSharedDependencies({ eager: true }),
       }),
