@@ -1,0 +1,25 @@
+{
+  "name": "react-native-location",
+  "version": "0.0.1",
+  "description": "Location service",
+  "main": "src/index",
+  "codegenConfig": {
+    "name": "LocationModuleSpec",
+    "type": "modules",
+    "jsSrcsDir": "src"
+  },
+  "author": " <> ()",
+  "license": "UNLICENSED",
+  "homepage": "#readme",
+  "devDependencies": {
+    "@react-native/babel-preset": "0.79.2",
+    "@types/react": "^19.0.0",
+    "react": "19.0.0",
+    "react-native": "0.79.2"
+  },
+  "create-react-native-library": {
+    "type": "turbo-module",
+    "languages": "kotlin-objc",
+    "version": "0.50.2"
+  }
+}
