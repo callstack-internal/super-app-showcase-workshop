@@ -1,8 +1,8 @@
 import path from 'node:path';
-import {fileURLToPath} from 'node:url';
+import { fileURLToPath } from 'node:url';
 import * as Repack from '@callstack/repack';
 import rspack from '@rspack/core';
-import {getSharedDependencies} from 'super-app-showcase-sdk';
+import { getSharedDependencies } from 'super-app-showcase-sdk';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -15,7 +15,7 @@ const __dirname = path.dirname(__filename);
  */
 
 export default env => {
-  const {mode, platform = process.env.PLATFORM} = env;
+  const { mode, platform = process.env.PLATFORM } = env;
 
   return {
     mode,
@@ -47,8 +47,9 @@ export default env => {
           dashboard: `dashboard@http://localhost:9002/${platform}/mf-manifest.json`,
           auth: `auth@http://localhost:9003/${platform}/mf-manifest.json`,
           news: `news@http://localhost:9004/${platform}/mf-manifest.json`,
+          adoptaApp: `adoptaApp@http://localhost:9005/${platform}/mf-manifest.json`,
         },
-        shared: getSharedDependencies({eager: true}),
+        shared: getSharedDependencies({ eager: true }),
       }),
       // silence missing @react-native-masked-view optionally required by @react-navigation/elements
       new rspack.IgnorePlugin({
