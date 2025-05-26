@@ -2,8 +2,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as Repack from '@callstack/repack';
 import rspack from '@rspack/core';
-import { getSharedDependencies } from 'super-app-showcase-sdk';
 import { ReanimatedPlugin } from '@callstack/repack-plugin-reanimated';
+import { getSharedDependencies } from '@mrsasuu/super-app-showcase-sdk';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
