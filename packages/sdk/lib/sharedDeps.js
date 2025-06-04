@@ -10,10 +10,21 @@ const getSharedDependencies = ({ eager = true }) => {
 
   const shared = Object.entries(dependencies)
     .filter(([dep, props]) => props.shared !== false)
-    .map(([dep, { version }]) => {
+    .map(([dep, { name, version }]) => {
+
+        if (name === 'react-native') {
+          return [
+            dep,
+            {singleton: true, eager: true, requiredVersion: version},
+          ];
+        }
+
       return [dep, { singleton: true, eager, requiredVersion: version }];
     });
-  return Object.fromEntries(shared);
+  const response = Object.fromEntries(shared);
+
+  console.log('Shared dependencies:', response);
+  return response;
 };
 
 module.exports = getSharedDependencies;

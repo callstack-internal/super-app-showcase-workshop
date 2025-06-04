@@ -1,0 +1,23 @@
+{
+  "name": "shared-package",
+  "version": "0.0.1",
+  "description": "POC Package to share data using Zustand",
+  "license": "MIT",
+  "homepage": "https://github.com/callstack/super-app-showcase",
+  "repository": "github:callstack/super-app-showcase",
+  "main": "src/index",
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "react": "19.0.0",
+    "zustand": "5.0.5"
+  },
+  "devDependencies": {
+    "@swc/helpers": "^0.5.17"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}

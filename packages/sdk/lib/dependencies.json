@@ -79,5 +79,13 @@
   "react-native-reanimated": {
     "name": "react-native-reanimated",
     "version": "3.17.5"
+  },
+  "zustand": {
+    "name": "zustand",
+    "version": "5.0.5"
+  },
+  "shared-package": {
+    "name": "shared-package",
+    "version": "0.0.1"
   }
 }

@@ -37,7 +37,10 @@
     "react-native-reanimated": "3.17.5",
     "react-native-safe-area-context": "5.3.0",
     "react-native-screens": "4.10.0",
-    "react-native-vector-icons": "10.2.0"
+    "react-native-vector-icons": "10.2.0",
+    "@module-federation/runtime": "0.14.1",
+    "shared-package": "link:../shared-package",
+    "zustand": "5.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -45,7 +48,7 @@
     "@babel/runtime": "^7.25.0",
     "@callstack/repack": "5.1.0",
     "@callstack/repack-plugin-reanimated": "5.1.0",
-    "@mrsasuu/super-app-showcase-sdk": "0.0.9",
+    "super-app-showcase-sdk": "0.0.2",
     "@react-native-community/cli": "15.0.1",
     "@react-native/babel-preset": "0.78.2",
     "@react-native/eslint-config": "0.78.2",
@@ -70,10 +73,10 @@
     "kitType": "app",
     "alignDeps": {
       "presets": [
-        "./node_modules/@mrsasuu/super-app-showcase-sdk/preset"
+        "./node_modules/super-app-showcase-sdk/preset"
       ],
       "requirements": [
-        "@mrsasuu/super-app-showcase-sdk@0.0.9"
+        "super-app-showcase-sdk@0.0.2"
       ],
       "capabilities": [
         "super-app"

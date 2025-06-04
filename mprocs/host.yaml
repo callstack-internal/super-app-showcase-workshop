@@ -14,3 +14,6 @@ procs:
   Shopping:
     shell: pnpm --filter shopping start
     stop: SIGKILL
+  Shared:
+    shell: pnpm --filter shared start
+    stop: SIGKILL

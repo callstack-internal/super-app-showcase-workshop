@@ -15,7 +15,7 @@ const __dirname = path.dirname(__filename);
  */
 
 export default env => {
-  const {mode} = env;
+  const {mode, platform} = env;
 
   return {
     mode,
@@ -46,6 +46,9 @@ export default env => {
           './AccountScreen': './src/screens/AccountScreen',
           './SignInScreen': './src/screens/SignInScreen',
           './AuthProvider': './src/providers/AuthProvider',
+        },
+        remotes: {
+          shared: `shared@http://localhost:9007/${platform}/mf-manifest.json`,
         },
         shared: getSharedDependencies({eager: false}),
       }),
