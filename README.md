@@ -2,6 +2,10 @@
 
 Este documento explica diferentes enfoques para compartir estado entre mini apps (micro-frontends) y la aplicación host en una arquitectura de Super App en React Native, basado en la implementación en el POC.
 
+## DEMO
+
+https://github.com/user-attachments/assets/2eb5489f-c71a-48f3-b621-3b34a742e64e
+
 ## Descripción del Video
 
 En el video, he dividido la pantalla en dos secciones: en la parte superior se muestra el código del host con componentes simples que implementan diferentes formas de compartir estado. Para demostrar cómo funciona el compartimiento de estado entre mini apps y el host (aunque funcionaría de manera similar entre mini apps), he modificado la pantalla de cuenta de la mini app de autenticación para utilizar estos diferentes enfoques.
@@ -526,6 +530,10 @@ La implementación completa se puede encontrar en el repositorio:
 # State Sharing Between Mini Apps and Host
 
 This document explains different approaches to share state between mini apps (micro-frontends) and the host application in a React Native Super App architecture, based on the implementation in the POC.
+
+## DEMO
+
+https://github.com/user-attachments/assets/2eb5489f-c71a-48f3-b621-3b34a742e64e
 
 ## Video Description
 
