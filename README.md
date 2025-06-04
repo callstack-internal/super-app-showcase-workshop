@@ -413,9 +413,7 @@ module.exports = {
       eager: true
     },
     zustand: {
-      singleton: true,
       requiredVersion: '5.0.5',
-      eager: true
     }
   }
 };
@@ -942,9 +940,7 @@ module.exports = {
       eager: true
     },
     zustand: {
-      singleton: true,
       requiredVersion: '5.0.5',
-      eager: true
     }
   }
 };
